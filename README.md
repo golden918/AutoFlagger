@@ -14,6 +14,11 @@
 2. Runs consistency checks
 3. Outputs a file called `flagged_invoices.csv` in the same folder
 
+## How to run it
+
+Place Incoices.csv file in the data folder.
+Run the AutoFlagger.
+
 ## Example Input
 
 ```csv
@@ -22,14 +27,9 @@ Alice Johnson,2001,2023-01-15,192.168.1.10
 Alice Johnson,2003,2023-12-20,192.168.1.10
 Carol Lee,2004,invalid-date,192.168.1.12
 
-## Example Output
+Example Output
 
 consumer_name,tracking_number,submission_date,ip_address,inconsistency_flagged,inconsistency_reason
 Alice Johnson,2001,2023-01-15,192.168.1.10,0,
 Alice Johnson,2003,2023-12-20,192.168.1.10,1,Repeat submission within 12 months
 Carol Lee,2004,invalid-date,192.168.1.12,1,Invalid submission_date format
-
-## How to run it
-
-Place Incoices.csv file in the data folder.
-Run the AutoFlagger.
