@@ -1,0 +1,7 @@
+consumer_name,tracking_number,submission_date,ip_address,inconsistency_flagged,inconsistency_reason
+Alice Johnson,2001,2023-01-15,192.168.1.10,0,
+Bob Smith,2002,2023-06-01,192.168.1.11,0,
+Alice Johnson,2003,2023-12-20,192.168.1.10,1,Repeat submission within 12 months
+Carol Lee,2004,invalid-date,192.168.1.12,1,Invalid submission_date format
+Dave White,2005,2022-03-10,192.168.1.13,0,
+Dave White,2006,2024-04-01,192.168.1.13,0,
